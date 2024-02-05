@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import './App.css';
 import {Stack, Box, Container} from '@mui/material';
 import Clicker from './components/Clicker';
 import Store from './components/Store';
