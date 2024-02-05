@@ -9,7 +9,7 @@ const Misc = () => {
       justifyContent='center'
       alignItems='center'>
         <Typography>
-            Testing misc
+            Testing misc asdasdasd
         </Typography>
       </Stack>
     </div>

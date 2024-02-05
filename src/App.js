@@ -33,10 +33,10 @@ function App() {
                 <Stack
                 direction='column'>
                   <Box style={{width: '50% ', backgroundColor: 'red'}}>
-                    misc
+                    <Misc/>
                   </Box>
                   <Box style={{width: '50%', backgroundColor: 'green'}}>
-                    cats
+                    <Store/>
                   </Box>
                 </Stack>
                 <Box style={{width: '10%', backgroundColor: 'yellow'}}>
