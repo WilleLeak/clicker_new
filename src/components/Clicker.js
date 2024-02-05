@@ -1,23 +1,16 @@
 import React from 'react'
-import { Stack, Typography } from '@mui/material'
+import { Stack, Typography, Box } from '@mui/material'
 
 const Clicker = () => {
-
   return (
-    <div style={{display: 'flex', justifyContent: 'left', alignItems: 'center', height: '100vh'}}>
-        <Stack
-        direction='column'
-        justifyContent='flex-start'
-        alignItems='flex-start'>
+    <div style={{backgroundColor: 'grey'}}>
+        <Box
+        // style = {{height: '100%'}}
+        >
             <Typography variant='h1'>
                 yarn
             </Typography>
-
-            <Typography variant='h4'>
-                test
-            </Typography>
-
-        </Stack>
+        </Box>
     </div>
   )
 }
