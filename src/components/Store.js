@@ -3,22 +3,9 @@ import {Stack, Typography, Box} from '@mui/material'
 
 const Store = () => {
   return (
-    <div style={{backgroundColor: 'grey'}}>
-        <Box
-        // style = {{height: '100%'}}
-        >
-            <Stack direction='column'>
-                <Box>
-                    Store!
-                </Box>
-                <Box>
-                    <Stack direction='row'>
-                        <Box> cats </Box>
-                        <Box>  </Box>
-                    </Stack>
-                </Box>
-                
-            </Stack>
+    <div style={{ flex: 1, backgroundColor: 'grey' }}>
+        <Box>
+            cats
         </Box>
     </div>
   )

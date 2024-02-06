@@ -1,53 +1,54 @@
-import logo from './logo.svg';
-import {Stack, Box, Container, Typography} from '@mui/material';
-import Clicker from './components/Clicker';
-import Store from './components/Store';
-import Misc from './components/Misc';
-import Upgrade from './components/Upgrade';
-import { sizing } from '@mui/system';
+import logo from "./logo.svg";
+import { Stack, Box, Container, Typography } from "@mui/material";
+import Clicker from "./components/Clicker";
+import Store from "./components/Store";
+import Misc from "./components/Misc";
+import Upgrade from "./components/Upgrade";
+import { sizing } from "@mui/system";
 
 function App() {
   return (
     <div className="App">
-      <Stack direction='row'
-      justifyContent='baseline'
-      alignItems=''
-      sx={{p: '2%'}}>
-        <Box id='clicker-left' sx={{width: '25%', height: '98%', padding: '0 2% 0 0'}}> {/*item 1*/}
-          <Clicker/>
+      <Stack
+        direction="row"
+        justifyContent="baseline"
+        alignItems=""
+        sx={{ p: "1%" }}
+      >
+        <Box
+          id="clicker-left"
+          sx={{ width: "25%", height: "98%", padding: "0 1% 0 0" }}
+        >
+          {" "}
+          {/*item 1*/}
+          <Clicker />
         </Box>
 
-        <Box style={{width: '75%', height: '98%', padding: '0 0 0 2%', backgroundColor: 'purple'}}>
-          <Stack
-            direction='column'
-            justifyContent='center'
-            alignItems='center'> 
-            <Box style = {{width: '75%', backgroundColor: 'blue'}}>
-              <Typography variant='h1'>
-                Store!
-              </Typography>
+        <Box
+          style={{
+            flex: 1,
+            backgroundColor: "purple",
+          }}
+        >
+          <Stack direction="column" justifyContent="left" alignItems="left">
+            <Box style={{ width: '100%', backgroundColor: "blue" }}>
+              <Typography variant="h1">Store!</Typography>
             </Box>
-              <Stack
-              direction='row'
-              >
-                <Stack
-                direction='column'>
-                  <Box style={{width: '50% ', backgroundColor: 'red'}}>
-                    <Misc/>
-                  </Box>
-                  <Box style={{width: '50%', backgroundColor: 'green'}}>
-                    <Store/>
-                  </Box>
-                </Stack>
-                <Box style={{width: '10%', backgroundColor: 'yellow'}}>
-                  upgrades
+            <Stack direction="row">
+              <Stack direction="column">
+                <Box style={{ backgroundColor: "red" }}>
+                  <Misc />
                 </Box>
-                
-                </Stack>          
+                <Box style={{ backgroundColor: "green" }}>
+                  <Store />
+                </Box>
+              </Stack>
+              <Box style={{ flex: 1, backgroundColor: "yellow" }}>
+                upgrades
+              </Box>
+            </Stack>
           </Stack>
         </Box>
-
-
 
         {/* <Stack 
         direction='row'
@@ -80,11 +81,7 @@ function App() {
               </Stack>
             </Box>
             </Stack> */}
-            
-          </Stack>
-
-
-
+      </Stack>
     </div>
   );
 }
